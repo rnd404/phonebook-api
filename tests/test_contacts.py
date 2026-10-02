@@ -19,7 +19,7 @@ async def test_invalid_phone_is_rejected(client):
 
 
 # --- to unlock step by step: remove the skip marker when you implement the endpoint ---
-@step3
+
 async def test_create_and_get(client):
     created = (await client.post("/contacts", json=PERSON)).json()
     assert created["id"] > 0 and created["surname"] == "Rossi"
@@ -27,12 +27,12 @@ async def test_create_and_get(client):
     assert r.status_code == 200 and r.json() == created
 
 
-@step3
+
 async def test_get_missing_returns_404(client):
     assert (await client.get("/contacts/999")).status_code == 404
 
 
-@step3
+
 async def test_delete(client):
     cid = (await client.post("/contacts", json=COMPANY)).json()["id"]
     assert (await client.delete(f"/contacts/{cid}")).status_code == 204
