@@ -1,4 +1,4 @@
-# Phonebook API
+# Phonebook API -- WORK IN PROGRESS
 
 A small asynchronous REST API (FastAPI + SQLAlchemy async) — a learning project.
 It re-implements, in REST, the phone directory service I previously wrote with
