@@ -45,8 +45,8 @@ tests/             pytest, in-memory database per test
 ## Roadmap
 
 - [x] 1. Project skeleton, `/health`, OpenAPI docs
-- [ ] 2. Schemas and validation (done in `schemas.py`; understand and extend)
-- [ ] 3. Database CRUD with async SQLAlchemy
+- [x] 2. Schemas and validation (done in `schemas.py`; understand and extend)
+- [x] 3. Database CRUD with async SQLAlchemy
 - [ ] 4. Search (`?q=`) and pagination
 - [ ] 5. Authentication, read/write permissions, password hashing
 - [ ] 6. Tests, Dockerfile, GitHub Actions CI
